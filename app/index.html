@@ -24,7 +24,7 @@
        <div class="wrapper">
             <div class="container">
                 <div class="topbar">
-                    <img src= "http://i59.tinypic.com/nffpw.png">
+                    <img src= "http://i59.tinypic.com/nffpw.png" class="header">
                 </div>
                 <div class="maincontent">
                     <div class="sidebar">
@@ -67,7 +67,7 @@
                     <%= description %>
                     </div>
                     <div class="repo-date">
-                    Last Updated <%= updated_at %></div> 
+                    Last updated <%= moment(updated_at).format('dddd [at] h:mma') %> 
                 </div>     
     </script>
 
@@ -91,7 +91,7 @@
                 </div>   
                 <div class="personal-info">
                     <img src="http://i58.tinypic.com/et8i8p.png" class= "created-image">
-                    <%= created_at %>
+                    Joined on <%= moment(created_at).format('MMM DD, YYYY') %>
                 </div>  
             </div>
                 <div class="sidebar-user-statistics">
@@ -117,6 +117,7 @@
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
         <script src="../bower_components/underscore/underscore.js"></script>
+        <script src="../bower_components/momentjs/moment.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
