@@ -1,0 +1,279 @@
+// bower:scss
+// endbower
+
+// .container {
+//     margin-left: 200px;
+// }
+// .sidebar {
+//     width: 25%
+// }
+// .mainbar {
+//     width: 75%
+// }
+body {
+    color: #333333;
+    min-width: 1020px;
+}
+
+.wrapper {
+
+}
+
+.container {
+    
+}
+.sidebar-container {
+    margin-left: 10px;
+}
+
+.topbar {
+    background-size: 100%;
+    height: 50px;
+    min-width: 1020px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.maincontent {
+    width: 1020px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sidebar {
+    display: inline-block;
+    float: left;
+    width: 25%;
+    height: 800px;
+    background: #fff;
+}
+
+.mainbar {
+    display: inline-block;
+    float: left;
+    margin-left: 25px;
+    width: 70%;
+}
+
+.mainbar-image {
+    margin-top: 20px;
+}
+
+.avatar {
+    background-size: cover; 
+    border-radius: 7px; 
+    background-image: url("https://avatars.githubusercontent.com/u/6868568?");
+    width: 230px; 
+    height: 230px;
+    background-size:100%;
+    margin-top: 20px;
+}
+
+.main-repo {
+    display: inline-block;
+    margin-left: 80px;
+}
+
+.book-image {
+    display: inline-block;
+    position: absolute;
+    margin-right: -10px;
+}
+
+.repo-list {
+    display: inline-block;
+    height: 32px;
+    width: 35px;
+    margin-bottom: 35px;
+}
+
+.repo-name {
+    display: inline-block;
+    margin-right: 260px;
+    font-family: Helvetica;
+    color: #4183c4;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 32px; 
+    font-weight: bold;
+    border-top: 1px solid #cacaca;
+    margin-left: 65px;
+}
+
+
+.repo-language {
+    display: inline-block;
+    width: 35px;
+    font-size: 13px;
+    color: #333333;
+    margin-right: 25px;
+}
+
+.stargazers {
+    display: inline-block;
+    color: #333333;
+    float: right;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Helvetica;
+    margin-left: 1px;
+    margin-top: 33px;
+}
+
+.star-image {
+    width: 20px;
+    height: 20px; 
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 28px;
+    float: right;
+}
+
+.forks {
+    display: inline-block;
+    color: #333333;
+    float: right;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Helvetica;
+    margin-left: 1px;
+    margin-top: 33px;
+}
+
+.fork-image {
+    width: 20px;
+    height: 20px; 
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 28px;
+    float: right;
+}
+
+.repo-description {
+    display: inline-block;
+    font-size: 13px;
+    color: #333333;
+    margin-left: 65px;
+}
+
+.repo-date {
+    display: inline-block;
+    width: 685px;
+    font-size: 13px;
+    color: #999999;
+    margin-left: 65px;
+}
+
+.footer {
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+    background: #cacaca;
+}
+
+.fullname { 
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: bold;
+    font-family: Helvetica;
+    margin-top: 10px;
+}
+
+.username { 
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 300;
+    font-family: Helvetica;
+    margin-bottom: 15px;
+    color: #cacaca;
+}
+
+///// personal-info is for the company, location and date on the sidebar /////
+.personal-info {
+    font-family: Helvetica;
+    color: #333333;
+    padding: 4px 0 2px 4px;
+    text-overflow: ellipsis;
+    font-size: 14px;  
+    padding-top: 8px;
+    overflow-x: hidden;
+}
+
+.company-image {
+    width: 25px; 
+    height: 25px;
+}
+
+.created-image {
+    width: 25px;
+    height: 25px;
+}
+
+.location-image {
+    width: 25px; 
+    height: 25px; 
+}
+
+.sidebar-user-statistics {
+    font-family: Helvetica;
+    padding: 4px 0 2px 4px;
+    text-overflow: ellipsis;
+    font-size: 14px;  
+    border-top: 1px solid #cacaca;
+    display: inline-block;
+    width: 230px;
+
+}
+
+.sidebar-info {
+    font-family: Helvetica;
+    margin-right: 50px;
+    text-overflow: ellipsis;
+    font-size: 14px;  
+    border-top: 1px solid #cacaca;
+    padding-top: 17px;
+    margin-bottom: 25px;
+}
+
+.followers {
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.starred {
+    display: inline-block;
+    float: left;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+.following {
+    display: inline-block;
+    float: left;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+.sidebar-user-number {
+    text-align: center;
+    font-size: 27px;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.sidebar-user-text {
+    font-size:11px;
+    color: #cacaca;
+    text-align: center;
+    font-family: Helvetica;
+}
+
+.repo-stats {
+    float: right;
+    display: inline-block;
+}
+
+
+
