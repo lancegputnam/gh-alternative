@@ -24,9 +24,12 @@ body {
 
 .topbar {
     height: 50px;
-    width: 100%
+    width: 1300px;
 }
 
+.header {
+    width: 100%
+}
 .maincontent {
     width: 1020px;
     margin-right: auto;
@@ -107,6 +110,13 @@ body {
     text-decoration: underline;
 }}
 
+.thefollowers {
+    color: #4183c4;
+    text-decoration: none;
+
+    &:hover {
+    text-decoration: underline;
+}}
 .repo-language {
     display: inline-block;
     width: 35px;
@@ -201,23 +211,24 @@ body {
     padding: 4px 0 2px 4px;
     text-overflow: ellipsis;
     font-size: 14px;  
-    padding-top: 8px;
-    overflow-x: hidden;
 }
 
 .company-image {
-    width: 25px; 
-    height: 25px;
+    width: 20px; 
+    height: 20px;
+    margin-bottom: -5px;
 }
 
 .created-image {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
+    margin-bottom: -5px;
 }
 
 .location-image {
-    width: 25px; 
-    height: 25px; 
+    width: 20px; 
+    height: 20px; 
+    margin-bottom: -5px;
 }
 
 .sidebar-user-statistics {
@@ -276,5 +287,43 @@ body {
     font-family: Helvetica;
 }
 
+.header {
+    height: 40px;
+    width: 100%;
+    background-color: #f3f3f3;
+    background-image: linear-gradient(#f9f9f9, #f3f3f3);
+    background-repeat: repeat-x;
+    text-shadow: 0 1px 0 #fff;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 20px;
 
+    & .cat {
+        width: 330px;
+        height: 35px;
+        padding-top: 4px;
+        position: absolute;
+    }
 
+    & .tabs {
+        padding: 5px;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 40px;
+        text-decoration: none;
+        color: #333333;
+        transition: color 0.1s ease-in;
+        font-family: Helvetica;
+        padding-bottom: 10px;
+
+        &:hover {color: #4183c4;}
+    }
+}
+.main-header {
+    margin-left: -10px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.listtabs {
+    margin-left: 340px;
+}
