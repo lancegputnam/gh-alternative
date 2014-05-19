@@ -34,7 +34,6 @@
 
        <div class="wrapper">
             <div class="container">
-                
                 <div class="maincontent">
                     <div class="sidebar">
                     </div>
@@ -105,16 +104,18 @@
             </div>
                 <div class="sidebar-user-statistics">
                     <div class="followers">
-                        <div class="sidebar-user-number"><%= followers %></div> 
+                        <a class="sidebar-user-number" href="<%= followers_url %>"><%= followers %>
+                        </a>
                         <div class="sidebar-user-text">Followers</div> 
                     </div>
                     <div class="starred">
-                        <div class="sidebar-user-number">1</div> 
+                        <a class="sidebar-user-number" href="<%= starred_url %>">1</a>
                         <div class="sidebar-user-text">Starred</div> 
                     </div>
                     <div class="following">
-                        <div class="sidebar-user-number"><%= following %></div> 
-                        <div class="sidebar-user-text">Following</div>  
+                        <a class="sidebar-user-number" href="<%= following_url %>"><%= following %>
+                        </a>
+                        <div class="sidebar-user-text">Following</div> 
                     </div>
                 </div>
             </div>

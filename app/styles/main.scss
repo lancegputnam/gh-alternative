@@ -6,30 +6,60 @@ body {
     min-width: 1020px;
 }
 
-.wrapper {
+.wrapper, .container {
     margin: 0px auto; 
     margin-right: auto; 
     margin-left: auto;
 }
 
-.container {
-    margin: 0px auto; 
-    margin-right: auto; 
-    margin-left: auto;
+////////// This is for the header of the page /////////////
+.header {
+    height: 40px;
+    width: 100%;
+    background-color: #f3f3f3;
+    background-image: linear-gradient(#f9f9f9, #f3f3f3);
+    background-repeat: repeat-x;
+    text-shadow: 0 1px 0 #fff;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+
+    & .cat {
+        width: 330px;
+        height: 35px;
+        padding-top: 4px;
+        position: absolute;
+    }
+
+    & .tabs {
+        padding: 5px;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 40px;
+        text-decoration: none;
+        color: #333333;
+        transition: color 0.1s ease-in;
+        font-family: Helvetica;
+        padding-bottom: 10px;
+
+        &:hover {color: #4183c4;}
+    }
 }
 
+.main-header {
+    margin-left: -10px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.listtabs {
+    margin-left: 340px;
+}
+
+////////// This is for the sidebar //////////////
 .sidebar-container {
     margin-left: 10px;
 }
 
-.topbar {
-    height: 50px;
-    width: 1300px;
-}
-
-.header {
-    width: 100%
-}
 .maincontent {
     width: 1020px;
     margin-right: auto;
@@ -65,13 +95,10 @@ body {
     margin-top: 20px;
 }
 
+/////////// This is for the main repo section ////////////////
 .main-repo {
     display: inline-block;
     margin-left: 10px;
-}
-
-.description {
-
 }
 
 .book-image {
@@ -99,7 +126,7 @@ body {
     line-height: 32px; 
     font-weight: bold;
     border-top: 1px solid #cacaca;
-    margin-left: 65px;
+    margin-left: 50px;
 }
 
 .thetitle {
@@ -117,15 +144,15 @@ body {
     &:hover {
     text-decoration: underline;
 }}
+
 .repo-language {
     display: inline-block;
-    width: 35px;
     font-size: 13px;
     color: #333333;
     margin-right: 25px;
 }
 
-.stargazers {
+.stargazers, .forks {
     display: inline-block;
     color: #333333;
     float: right;
@@ -136,27 +163,7 @@ body {
     margin-top: 33px;
 }
 
-.star-image {
-    width: 20px;
-    height: 20px; 
-    display: inline-block;
-    margin-left: 15px;
-    margin-top: 28px;
-    float: right;
-}
-
-.forks {
-    display: inline-block;
-    color: #333333;
-    float: right;
-    font-size: 11px;
-    font-weight: bold;
-    font-family: Helvetica;
-    margin-left: 1px;
-    margin-top: 33px;
-}
-
-.fork-image {
+.star-image, .fork-image {
     width: 20px;
     height: 20px; 
     display: inline-block;
@@ -169,7 +176,7 @@ body {
     display: inline-block;
     font-size: 13px;
     color: #333333;
-    margin-left: 65px;
+    margin-left: 50px;
 }
 
 .repo-date {
@@ -177,14 +184,7 @@ body {
     width: 685px;
     font-size: 13px;
     color: #999999;
-    margin-left: 65px;
-}
-
-.footer {
-    display: inline-block;
-    height: 100px;
-    width: 100%;
-    background: #cacaca;
+    margin-left: 50px;
 }
 
 .fullname { 
@@ -213,21 +213,9 @@ body {
     font-size: 14px;  
 }
 
-.company-image {
+.company-image, .created-image, .location-image {
     width: 20px; 
     height: 20px;
-    margin-bottom: -5px;
-}
-
-.created-image {
-    width: 20px;
-    height: 20px;
-    margin-bottom: -5px;
-}
-
-.location-image {
-    width: 20px; 
-    height: 20px; 
     margin-bottom: -5px;
 }
 
@@ -239,7 +227,6 @@ body {
     border-top: 1px solid #cacaca;
     display: inline-block;
     width: 230px;
-
 }
 
 .sidebar-info {
@@ -252,6 +239,7 @@ body {
     margin-bottom: 25px;
 }
 
+//////// This is for the Followers and Following Section ////////////
 .followers {
     display: inline-block;
     float: left;
@@ -259,14 +247,7 @@ body {
     margin-top: 10px;
 }
 
-.starred {
-    display: inline-block;
-    float: left;
-    margin-left: 35px;
-    margin-top: 10px;
-}
-
-.following {
+.starred, .following {
     display: inline-block;
     float: left;
     margin-left: 35px;
@@ -278,6 +259,11 @@ body {
     font-size: 27px;
     font-family: Helvetica;
     font-weight: bold;
+    text-decoration: none;
+    color: #333333;
+    margin-left: 14px;
+
+    &:hover {color: #4183c4;}
 }
 
 .sidebar-user-text {
@@ -287,43 +273,4 @@ body {
     font-family: Helvetica;
 }
 
-.header {
-    height: 40px;
-    width: 100%;
-    background-color: #f3f3f3;
-    background-image: linear-gradient(#f9f9f9, #f3f3f3);
-    background-repeat: repeat-x;
-    text-shadow: 0 1px 0 #fff;
-    border-bottom: 1px solid #e5e5e5;
-    margin-bottom: 20px;
 
-    & .cat {
-        width: 330px;
-        height: 35px;
-        padding-top: 4px;
-        position: absolute;
-    }
-
-    & .tabs {
-        padding: 5px;
-        font-size: 13px;
-        font-weight: bold;
-        line-height: 40px;
-        text-decoration: none;
-        color: #333333;
-        transition: color 0.1s ease-in;
-        font-family: Helvetica;
-        padding-bottom: 10px;
-
-        &:hover {color: #4183c4;}
-    }
-}
-.main-header {
-    margin-left: -10px;
-    width: 1000px;
-    margin: 0 auto;
-}
-
-.listtabs {
-    margin-left: 340px;
-}
