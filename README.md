@@ -1,7 +1,7 @@
 Github Rebuild
 ==============
 
-This project allowed us to partially recreate the GitHub repository page. The project had us implementing Bower and Underscore to create templates that were to be used with GitHub API's. The API pull the data into the GitHub Repo rebuild using JSON. 
+This project allowed us to partially recreate the GitHub repository page. The project had us implementing Bower and Underscore to create templates that were to be used with GitHub API's. The API pulls the data into the GitHub Repo rebuild using JSON. 
 
 Primary Technologies: 
 HTML, CSS, JavaScript, Underscore, JSON
